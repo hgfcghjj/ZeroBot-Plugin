@@ -1,13 +1,22 @@
 package main
 
 import (
-	zero "github.com/wdvxdr1123/ZeroBot"
-	"github.com/wdvxdr1123/ZeroBot/driver"
-)
-
-type zbpcfg struct {
-	Z zero.Config        `json:"zero"`
-	W []*driver.WSClient `json:"ws"`
+	{
+    "zero": {
+        "nickname": [
+            "椛椛",
+            "ATRI",
+            "atri",
+            "亚托莉",
+            "アトリ"
+        ],
+        "command_prefix": "/",
+        "super_users": []
+    },
+    "ws": [
+        {
+            "Url": "ws://127.0.0.1:6700",
+            "AccessToken": ""
+        }
+    ]
 }
-
-var config zbpcfg
